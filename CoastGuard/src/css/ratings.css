@@ -1,0 +1,317 @@
+/* CSS styling for the form and reviews */
+.form-container {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-container label,
+.form-container select,
+.form-container textarea {
+    display: block;
+    margin-bottom: 15px;
+    
+}
+
+.form-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+    width: 100%; /* Set the dropdown width to fill its container */
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.form-container input[type="file"] {
+    display: none;
+}
+
+.form-container .file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f0552e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.form-container .file-input-label {
+    flex-grow: 1;
+    padding: 5px 10px;
+}
+
+.form-container .file-input-button {
+    padding: 8px 12px;
+    background-color: #f0552e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.form-container .file-input-button:hover {
+    background-color: #e77e00;
+}
+
+.form-container button:hover {
+    background-color: #e77e00;
+}
+
+.reviews-container {
+    margin-top: 40px;
+}
+
+.reviews-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.reviews-container .sorting-options {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.reviews-container label {
+    margin-right: 10px;
+}
+
+.reviews-container select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.reviews-container select option {
+    padding: 8px;
+}
+
+.reviews-container .card {
+    max-width: 400px;
+    padding: 15px;
+    margin: 10px auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.reviews-container .card h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.reviews-container .timestamp {
+    font-size: 12px;
+    color: #888;
+}
+
+.reviews-container .card button {
+    padding: 8px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 100px;
+    margin: 10px;
+}
+
+/* Style delete button */
+.reviews-container .card button.delete-button {
+    background-color: #f44336; /* Red color */
+}
+
+/* Style the image container */
+#imagePreviewContainer {
+    margin-top: 20px;
+}
+
+.image-box {
+    width: 150px; /* Set the desired width for the image box */
+    height: 150px; /* Set the desired height for the image box */
+    border: 1px solid #ccc;
+    overflow: hidden;
+}
+
+#imagePreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.review-image {
+    max-width: 100%;
+    max-height: 200px; /* Set the maximum height you want for the image */
+    margin: 10px 0;
+    overflow: hidden;
+}
+
+.review-image img {
+    width: 200px;
+    height: 100px;
+    display: block;
+}
+
+/* Style the modal */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Style the modal content */
+.modal-content {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the close button (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #555;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: #f00;
+}
+
+/* Style the inputs and labels inside the modal */
+.modal-content label,
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.modal-content select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.modal-content textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* Style the file input and button inside the modal */
+.modal-content .file-input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    background-color: #f9f9f9;
+}
+
+.modal-content .file-input-label {
+    flex-grow: 1;
+    padding: 5px 10px;
+}
+
+.modal-content .file-input-button {
+    padding: 8px 12px;
+    background-color: #f0552e;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal-content .file-input-button:hover {
+    background-color: #e77e00;
+}
+
+/* Style the image container in the modal */
+.modal-content .image-box {
+    width: 100%;
+    height: 150px;
+    border: 1px solid #ccc;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.modal-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Style the "Save Changes" button in the modal */
+.modal-content button#saveChanges {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.modal-content button#saveChanges:hover {
+    background-color: #45a049;
+}
+
+/* Style the error message */
+.error-message {
+    color: red;
+    margin-top: 5px;
+}
+
+p {
+    text-align: center;
+}
+

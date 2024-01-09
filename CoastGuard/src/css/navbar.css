@@ -1,0 +1,147 @@
+/* Custom navbar styling */
+.navbar {
+    background-color: #ffffff;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    color: #333333;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333333;
+    font-weight: 500;
+    margin-right: 15px;
+    position: relative;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #ff8800;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    z-index: 6;
+}
+
+.navbar-toggler-icon {
+    color: #333333;
+}
+
+/* Additional style for the 'show' class */
+.navbar.show {
+    display: block;
+}
+
+.navbarContent.hide {
+    display: none;
+}
+
+
+button.dropbtn {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.dropbtn {
+    padding: 12px 20px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 3px;
+    z-index: 2;
+    border: 1px solid #e1e1e1;
+}
+
+.dropbtn:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 5;
+}
+
+.dropdown-content button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.dropdown-content button:hover {
+    background-color: #e8e8e8;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.fa-globe {
+    margin-right: 5px;
+}
+
+.fa-chevron-down {
+    margin-left: 5px;
+}
+
+
+
+svg {
+    margin-right: 10px;
+}
+
+@media (min-width: 300px) {
+    a.nav-link {
+        text-align: center; 
+    }
+  
+    div.dropdown {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .dropdown-content {
+        margin: 50px;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 2;
+    }
+    
+    .language-button {
+        display: block;
+        width: 100%;
+        text-align: left;
+        z-index: 3;
+    }
+    
+    
+    
+  }
